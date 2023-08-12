@@ -1,0 +1,17 @@
+# keys for challenges https://pwn.college/cse365-s2023/cryptography
+
+theory 
+
+CID
+Block Cipher and Stream Cipher belongs to the symmetric key cipher.
+
+one time pad (stream chiper) - uncrackable technique mathematically with certain conditions. basicallly works on XOR. key should be => then plaintext.
+https://www.youtube.com/watch?v=rCeWtQERizA&t=836s
+
+properties for good encryption
+* confusion - small change in the key should change the chipertext
+* diffusion - small change in plain text should change the chipertext
+
+AES (Block Cipher) - 
+
+1.
