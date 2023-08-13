@@ -16,15 +16,15 @@ properties for good encryption
 -----------------------------
 AES (Block Cipher) 
 -------------------------
-plain txt xor with key(which has expanded to make 11 rounds) and then converted into subytes(function which will substitute every bytes(SPN)) and then shifting rows and columns and again the above process is reapeated till last round where the mixing of row and col wont perform.
+plain txt xor with key(which has expanded to make 11 rounds) and then converted into subytes(function which will substitute every bytes(SPN)) and then shifting rows and columns and again the above process is repeated till last round where the mixing of row and col wont perform.
 block size 128
 key 128 196 256
 *substitution permutation network
 key 128 is more efficient since both 128 and 256 never been cracked so 128 is more power effective
-
+![[Pasted image 20230813103405.png]]
 DES(block)
 ------------------
-works by Feistel cipher()
+works by Feistel cipher( it is a framework on which every crypto works)
 block size 64
 key 48
 ![[Pasted image 20230812183727.png]]
@@ -43,12 +43,41 @@ instead of prev result it uses some counter
 one solution for overcoming parallels computing
 Key exchange
 ---
+DH key exchange
+---
 (paint exchange)
-
+modulas (%)
+eg. (7^n)%25 
+![[Pasted image 20230813094523.png]]
+![[Pasted image 20230813094556.png]]
 asymmetric 
 --
+RSA
+--
+similar to DH key exchange
+https://www.youtube.com/watch?list=PL-ymxv0nOtqpBYQKnbivatYlfQ3Ygf63_&v=661MFqOp0WA
+
+HASH
+--
+sha256
+proof of work
+
+trust:
+hashing
+rsa public and private key 
+
+=======================================================
+challenges
+lvl
+1- pwn.college{I4wHOxEABo-7EkmmFwaxEGK3AF7.dNzNzMDL2cjNzIzW}
+2 -pwn.college{k8960W1WAPvCbtd36_763lBuHdX.dRzNzMDL2cjNzIzW}
+first converted base64 to hex and then xor ed and convered hex to base64 to decode
+3- pwn.college{sUJka5twA39_BoFUdlTCL9ySJqe.dVzNzMDL2cjNzIzW}
+just input the given cipher
+4-
 
 
+=======================================================
 1.
 
 ###########################################################################
