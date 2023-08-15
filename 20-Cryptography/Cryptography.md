@@ -90,3 +90,49 @@ types
 -based on type of input data
  ---(block)DES AES IDEA
  ---(stream)RC4  SEAL
+
+cryptanalysis
+-linear 
+-differential
+-integral
+
+breaking technique
+-brute force
+-frequency analysis
+-trickery and deceit
+
+
+birthday paradox or pigeon hole
+
+meet in the middle
+E1(E2(plain txt, key),key)
+attacker tries to encrypt with random key which give output of E1
+and also he tries to decrypt E2 backwards, if both output is same then key is found
+
+side channel attack 
+physical environmental factors affect the crypto hardware and software
+
+hash collision
+
+DUHK(dont use hard coded keys) vuln
+random number generator
+
+vaudenay(padding oracle attack)
+exploits padding validatinon of encrypted messsage
+
+ssl and tsl
+
+tsl is upgraded version of ssl 
+tsl uses DH key exchange , rsa , aes, sha356
+ssl used older key exchange, Des , sha1
+
+
+pgp (pretty good privacy (normal aesymentric key))
+gnu privacy guard(normal digital signature and encryption)
+web of trust (instead of public key infrastructure (like blockchain))
+
+further research
+Duhk
+DROWN attack (ssl breaking)
+openssl
+ipsec
